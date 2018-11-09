@@ -1,8 +1,24 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
+
+
 body {
-    padding-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
     padding-bottom: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+
+main {
+    height: 100%;
+    margin: -20px 0;
+    padding: 20px;
+}
+
+footer {
+    margin: -20px 0;
+    padding: 40px 20px 20px 20px;
 }
 
 /* Wrapping element */
@@ -12,21 +28,122 @@ body {
     padding-right: 15px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+#nav {
+    background-color: #59424a
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+    #nav .navbar-brand {
+        color: #e9e0d7;
+    }
+
+        #nav .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+        #nav .navbar-brand:active {
+            color: #decebe;
+        }
+
+    #nav .navbar-nav .nav-button .nav-a:link, #nav .navbar-nav .nav-button .nav-a:visited {
+        color: #e9e0d7;
+    }
+
+    #nav .navbar-nav .nav-button .nav-a:hover {
+        color: #ffffff;
+    }
+
+    #nav .navbar-nav .nav-button .nav-a:active {
+        color: #decebe;
+    }
+
+h2 {
+    margin-bottom: 25px;
+    color: #946474;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+.imageHeader {
+    width: 1180px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
+
+form {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+    form input, form .form-control {
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        padding: 5px;
+    }
+
+form select {
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.filter {
+    margin-left: 8px;
+}
+
+.table {
+    border: 1px solid #decebe;
+    margin-top: 25px;
+}
+thead {
+    background-color: #e9e0d7;
+}
+
+th {
+    color: #946474;
+}
+
+th a {
+    text-decoration: underline;
+}
+
+
+.bookColumn {
+    width: 150px;
+}
+
+.noteColumn {
+    width: 50%;
+}
+
+
+main a {
+    color: #946474;
+}
+
+    main a:hover {
+        color: #59424a;
+    }
+
+.button {
+    background-color: #ae947b;
+    color: #ffffff;
+    border: none;
+    padding: 7px 10px;
+    width: auto;
+}
+
+    .button:hover {
+        text-decoration: none;
+        background-color: #decebe;
+        color: #59424a;
+    }
+
+.create {
+    margin-top: 20px;
+    margin-left: -1px;
+    border-radius: 2px;
+}
+
+
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
